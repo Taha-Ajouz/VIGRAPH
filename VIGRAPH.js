@@ -36,3 +36,17 @@ saveBtn.addEventListener('click', () => {
     messageInput.value = '';
   }
 });
+
+let butElement = document.getElementById('dropdown-arrow');
+let pagesElement = document.getElementById('drop__container');
+
+butElement.addEventListener('click', () => {
+  if (pagesElement.style.display === 'block') {
+    pagesElement.style.display = 'none';
+        butElement.innerHTML = '→ ';
+    
+  } else {
+    pagesElement.style.display = 'block';
+    butElement.innerHTML = '↓';
+  }
+});

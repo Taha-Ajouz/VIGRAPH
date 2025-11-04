@@ -730,47 +730,7 @@ header::before {
   html{
     font-size: 9.3px;
   }
+  .main2__text--title{
+    margin-left: 2.2rem;
+  }
 }
-/* @media (min-width: 576px) and (max-width: 766px){
-html {
-    font-size: 7.8px;
-  }
-  .myframe {
-    height: 18.7rem;
-    width: 33.5rem;
-  }
-  ::placeholder {
-    font-size: 0.8rem;
-  }
-  input[type='text'],
-  input[type='email'] {
-    padding: 0.2rem;
-  }
-  header::before {
-    min-width: 73.8rem;
-    height: 33rem;
-    background-size: 58rem;
-  }
-  .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .video {
-    width: 100%;
-  }
-  .main2__googlemap {
-    height: 100%;
-    width: 100%;
-  }
-  .ending__container {
-    gap: 6.4rem;
-    padding-bottom: 2rem;
-  }
-  .main2__text--title {
-    margin-left: 0rem;
-  }
-  .main2__cont {
-    margin-right: 0rem;
-  }
-} */

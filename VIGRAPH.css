@@ -639,10 +639,10 @@ ul {
     display: grid;
   }
   .main2__googlemap {
-    height: 1rem;
+    height: 0rem;
   }
   .main2__fields {
-    gap: 1.2rem;
+    gap: 2.2rem;
   }
 }
 @media (min-width: 430px) and (max-width: 430px) {
@@ -732,5 +732,36 @@ header::before {
   }
   .main2__text--title{
     margin-left: 2.2rem;
+  }
+}
+@media (min-width: 740px) and (max-width: 740px){
+html{
+  font-size: 7.2px;
+}
+}
+@media (min-width: 640px) and (max-width: 640px){
+html{
+  font-size: 5.3px;
+}
+.main2__fields{
+  margin-top: 2rem;
+}
+}
+@media (min-width: 720px) and (max-width: 720px){
+  html{
+    font-size: 8px;
+  }
+}
+@media (min-width: 667px) and (max-width: 667px){
+  html{
+    font-size: 6px;
+  }
+}
+@media (min-width: 690px) and (max-width: 690px){
+  html{
+    font-size: 6.2px;
+  }
+  .main2__fields{
+    margin-top: 1rem;
   }
 }

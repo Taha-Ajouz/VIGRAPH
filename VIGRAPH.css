@@ -120,6 +120,7 @@ header::before {
   width: 0px;
   border: none;
   color: white;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 #dropdown-arrow:hover {
@@ -559,7 +560,7 @@ ul {
 
 @media (min-width: 767px) and (max-width: 1024px) {
   html {
-    font-size: 9px;
+    font-size: 9.19px;
   }
   .myframe {
     height: 16.5rem;

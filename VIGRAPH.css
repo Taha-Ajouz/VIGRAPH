@@ -585,15 +585,13 @@ ul {
     background-size: 58rem;
   }
   .main {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
   }
   .video {
     width: 100%;
   }
   .main2__googlemap {
-    height: 100%;
     width: 100%;
   }
   .ending__container {

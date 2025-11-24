@@ -708,7 +708,6 @@ ul {
 .main2__cont {
   gap: 1.43rem;
 }
-
 .ending__container {
   gap: 4.5rem;
 }
@@ -730,6 +729,12 @@ ul {
   }
   html {
     font-size: 5px;
+  }
+  .main {
+    display: grid;
+  }
+  .main2__googlemap {
+    height: 0px;
   }
 }
 @media (min-width: 1009px) and (max-width: 1199px) {

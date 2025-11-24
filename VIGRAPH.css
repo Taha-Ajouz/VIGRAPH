@@ -572,6 +572,10 @@ ul {
     display: flex;
     flex-direction: column;
   }
+  .main__fields--contact{
+        -webkit-text-stroke: 0.22px white;
+
+  }
   .video {
     width: 100%;
   }
@@ -635,5 +639,11 @@ ul {
   }
   .main2__cont {
     gap: 4rem;
+  }
+}
+@media(prefers-color-scheme: dark){
+  body{
+    background-color: black;
+    color: white;
   }
 }

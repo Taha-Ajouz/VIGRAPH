@@ -68,11 +68,6 @@ header::before {
   font-family: 'Poiret One', sans-serif;
   font-weight: bolder;
 }
-.myframe {
-  width: 30.4rem;
-  height: 16rem;
-}
-
 .project__image {
   width: 6.2rem;
 }
@@ -312,13 +307,19 @@ img {
   color: white;
   text-align: start;
   font-size: 1rem;
+  grid-column: 1 / -1;
+  text-align: start;
+  height: fit-content;
+  word-wrap: break-word;
+  max-width: 38rem; /* Controls how wide the text can stretch */
+  line-height: 1.5rem;
 }
 .main2__cont {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 4.43rem;
-  margin-right: 2rem;
+  grid-template-columns: repeat(2, 15rem);
+  grid-template-rows: repeat(2, 7rem);
+  gap: 2rem;
+  margin-top: 2.5rem;
 }
 
 .main2__text--target {
@@ -343,6 +344,12 @@ img {
   color: white;
   text-align: center;
 }
+.myframe {
+  grid-column: 1 / -1; /* span across all columns */
+  width: 100%; /* stretch horizontally */
+  height: 18.5rem; /* stretch vertically */
+  border: none; /* clean look */
+}
 
 .main2__fields {
   display: flex;
@@ -351,11 +358,6 @@ img {
   gap: 3.2rem;
   padding: 1.1rem;
   width: 31.7rem;
-}
-
-.main2__googlemap {
-  height: 0rem;
-  border-radius: 0.5rem;
 }
 
 .video {
@@ -623,9 +625,6 @@ ul {
   .main2__fields {
     width: 26.7rem;
   }
-  .myframe {
-    width: 24.3rem;
-  }
   header::before {
     background-position: center;
     background-size: 69rem;
@@ -718,9 +717,6 @@ ul {
   }
   .main2__fields {
     width: 26.7rem;
-  }
-  .myframe {
-    width: 24.3rem;
   }
   .video__text2 {
     font-size: 2.6rem;

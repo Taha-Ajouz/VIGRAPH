@@ -565,6 +565,7 @@ ul {
   z-index: -1;
   border: 1px solid black;
   border-radius: 100%;
+  box-shadow: 0px 2px 4px rgba(255, 253, 253, 0.555);
 }
 .slideshow {
   display: flex;
@@ -649,8 +650,8 @@ ul {
   #img2,
   #img3,
   #img4 {
-    width: 8rem;
-    height: 8rem;
+    width: 15.4rem;
+    height: 15.4rem;
   }
   .project__tittle {
     top: 15%;

@@ -621,7 +621,7 @@ ul {
     font-size: 9px;
   }
   .ending__container {
-    gap: 1.4rem;
+    gap: 2rem;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 2rem;
@@ -759,7 +759,7 @@ ul {
     font-size: 6px;
   }
   .ending__container {
-    gap: 1.4rem;
+    gap: 2rem;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 2rem;

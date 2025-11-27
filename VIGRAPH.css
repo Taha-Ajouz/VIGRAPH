@@ -322,7 +322,7 @@ img {
 }
 .main2__cont {
   display: grid;
-  grid-template-columns: repeat(2, 15rem);
+  grid-template-columns: repeat(2, 16rem);
   grid-template-rows: repeat(2, 7rem);
   gap: 2rem;
   margin-top: 2.5rem;

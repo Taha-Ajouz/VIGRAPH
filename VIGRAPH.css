@@ -148,7 +148,6 @@ header::before {
   position: absolute;
   top: 4rem;
   font-weight: bold;
-  background-color: gray(45, 45, 159, 0.459);
   padding: 1.1rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 255, 0.2);
   border: 1px solid;
@@ -647,6 +646,7 @@ ul {
   }
   .project__list {
     gap: 1rem;
+    margin-right: 1rem;
   }
   .main__fields--contact {
     -webkit-text-stroke: 0.4px white;
@@ -668,6 +668,9 @@ ul {
   #img4 {
     width: 9.5rem;
     height: 9.5rem;
+  }
+  #drop__container {
+    margin-left: 3.1rem;
   }
   .project__tittle {
     top: 17%;
@@ -735,6 +738,9 @@ ul {
   .main2__cont {
     margin-top: 1.5rem;
   }
+  .project__container {
+    margin-top: 13.5rem;
+  }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
   html {
@@ -753,7 +759,13 @@ ul {
     font-size: 6px;
   }
   .ending__container {
-    gap: 3.9rem;
+    gap: 1.4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2rem;
+  }
+  .ending__container1 {
+    margin-bottom: 0rem;
   }
   .video__text1 {
     font-size: 2.2rem;
@@ -773,7 +785,7 @@ ul {
     background-size: 69rem;
   }
   .project__list {
-    gap: 3rem;
+    gap: 2rem;
   }
   .main__fields--contact {
     -webkit-text-stroke: 0.4px white;
@@ -796,13 +808,16 @@ ul {
     height: 8rem;
   }
   .project__tittle {
-    top: 15%;
+    top: 25%;
   }
   .project__list1,
   .project__list2,
   #project__list3,
   #dropdown-arrow {
     font-size: 1.7rem;
+  }
+  .project__container {
+    margin-top: 16.5rem;
   }
 }
 

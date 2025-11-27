@@ -13,39 +13,31 @@ body {
   gap: 0rem;
 }
 
-header {
-  position: relative;
-  z-index: 1;
-  color: white; /* or any color for your text */
-  padding: 2rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 .project {
   display: flex;
   flex-direction: column;
-  height: 42rem;
-  width: 100%;
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  aspect-ratio: 16/9;
+  overflow: hidden;
 }
-header::before {
+.project::before {
   content: '';
-  position: absolute;
   top: 0;
+  position: absolute;
   right: 0;
-  width: 100%;
-  height: 40rem;
   background-image: url(lapoot.jpeg);
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: 100rem 100%;
-  background-position: center;
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
   opacity: 0.6;
   z-index: -1;
-  -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 100%;
-  mask-image: linear-gradient(to right, black 50%, transparent 100%);
-  mask-repeat: no-repeat;
-  mask-size: 100% 100%;
 }
 
 .project__tittle {
@@ -128,7 +120,7 @@ header::before {
 #dropdown-arrow {
   display: inline-block;
   position: relative;
-  top: -0.31rem; /* lifts the arrow slightly */
+  top: -0.31rem;
   font-size: 0.94rem;
   margin-left: 0.31rem;
   font-weight: bold;
@@ -191,8 +183,11 @@ header::before {
   flex-direction: column;
   text-align: center;
   justify-self: center;
-  margin-top: 12.5rem;
   gap: 0.63rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .project__header {
@@ -582,6 +577,7 @@ ul {
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 /* Each image starts at a different time */
@@ -670,12 +666,6 @@ ul {
     width: 9.5rem;
     height: 9.5rem;
   }
-  #drop__container {
-    margin-left: 4.1rem;
-  }
-  .project__tittle {
-    top: 17%;
-  }
   #messagebox {
     top: 53%;
     left: 25%;
@@ -696,18 +686,6 @@ ul {
   .project__list--contact {
     font-size: 1.1rem;
     padding: 0.1rem 2rem;
-  }
-  .project__container {
-    margin-top: 7rem;
-  }
-  img {
-    margin-bottom: 1rem;
-  }
-  .project {
-    height: 21rem;
-  }
-  .slideshow {
-    margin-top: 3.5rem;
   }
 }
 @media only screen and (max-width: 390px) {
@@ -733,11 +711,6 @@ ul {
   .main2__fields {
     width: 26.7rem;
   }
-  header::before {
-    background-position: center;
-    background-size: 47rem;
-    top: -84px;
-  }
   .project__list {
     gap: 1rem;
     margin-right: 1rem;
@@ -760,12 +733,12 @@ ul {
   #img2,
   #img3,
   #img4 {
-    width: 9.5rem;
-    height: 9.5rem;
+    width: 8.5rem;
+    height: 8.5rem;
   }
 
   .project__tittle {
-    top: 17%;
+    top: 23%;
   }
   #messagebox {
     top: 53%;
@@ -789,19 +762,11 @@ ul {
     padding: 0.1rem 2rem;
   }
   .project__container {
-    margin-top: 14.5rem;
-  }
-  #drop__container {
-    margin-left: 4.5rem;
+    left: 37%;
+    top: 64%;
   }
   img {
     margin-bottom: 1rem;
-  }
-  .project {
-    height: 21rem;
-  }
-  .slideshow {
-    margin-top: 3.5rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -814,10 +779,6 @@ ul {
   .project__list {
     gap: 2.5rem;
   }
-  header::before {
-    background-position: center;
-    background-size: 70rem;
-  }
   #img1,
   #img2,
   #img3,
@@ -825,13 +786,10 @@ ul {
     width: 15rem;
     height: 15rem;
   }
-  .project__container {
-    margin-top: 13.5rem;
-  }
 }
-@media only screen and (min-width: 549px) and (max-width: 714px) {
+@media only screen and (min-width: 430px) and (max-width: 714px) {
   html {
-    font-size:7.8px;
+    font-size: 11.8px;
   }
   .ending__container {
     gap: 4.4rem;
@@ -840,23 +798,26 @@ ul {
     gap: 2.5rem;
   }
   header::before {
-    background-position: center;
-    background-size: 70rem;
+    background-size: contain;
   }
   #img1,
   #img2,
   #img3,
   #img4 {
-    width: 15rem;
-    height: 15rem;
+    width: 11rem;
+    height: 11rem;
+  }
+  .project__tittle {
+    top: 23%;
   }
   .project__container {
-    margin-top: 13.5rem;
+    left: 39%;
+    top: 55%;
   }
 }
 @media only screen and (min-width: 715px) and (max-width: 770px) {
   html {
-    font-size:9px;
+    font-size: 10px;
   }
   .ending__container {
     gap: 4.4rem;
@@ -864,19 +825,12 @@ ul {
   .project__list {
     gap: 2.5rem;
   }
-  header::before {
-    background-position: center;
-    background-size: 70rem;
-  }
   #img1,
   #img2,
   #img3,
   #img4 {
     width: 15rem;
     height: 15rem;
-  }
-  .project__container {
-    margin-top: 13.5rem;
   }
 }
 
@@ -921,10 +875,6 @@ ul {
   .video__text2 {
     font-size: 2.6rem;
   }
-  header::before {
-    background-position: center;
-    background-size: 69rem;
-  }
   .project__list {
     gap: 2rem;
   }
@@ -957,9 +907,6 @@ ul {
   #dropdown-arrow {
     font-size: 1.7rem;
   }
-  .project__container {
-    margin-top: 16.5rem;
-  }
 }
 
 @media screen and (width: 2560px) {
@@ -968,7 +915,7 @@ ul {
     font-size: 27px;
   }
 }
-@media only screen and (min-width: 410px) and (max-width: 430px){
+@media only screen and (min-width: 410px) and (max-width: 430px) {
   html {
     font-size: 9px;
   }
@@ -981,20 +928,15 @@ ul {
   .ending__container1 {
     margin-bottom: 0rem;
   }
+  .project {
+    height: 25vh;
+  }
   .video__text1 {
     font-size: 2.2rem;
     -webkit-text-stroke: 0.6px white;
   }
   textarea::placeholder {
     font-size: 1rem;
-  }
-  .main2__fields {
-    width: 26.7rem;
-  }
-  header::before {
-    background-position: center;
-    background-size: 47rem;
-    top: -84px;
   }
   .project__list {
     gap: 1rem;
@@ -1024,9 +966,6 @@ ul {
   #drop__container {
     margin-left: 4.1rem;
   }
-  .project__tittle {
-    top: 17%;
-  }
   #messagebox {
     top: 53%;
     left: 25%;
@@ -1047,17 +986,5 @@ ul {
   .project__list--contact {
     font-size: 1.1rem;
     padding: 0.1rem 2rem;
-  }
-  .project__container {
-    margin-top: 7rem;
-  }
-  img {
-    margin-bottom: 1rem;
-  }
-  .project {
-    height: 21rem;
-  }
-  .slideshow {
-    margin-top: 3.5rem;
   }
 }

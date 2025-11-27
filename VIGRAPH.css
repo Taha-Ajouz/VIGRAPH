@@ -40,6 +40,13 @@ header::before {
   background-position: center;
   opacity: 0.6;
   z-index: -1;
+  -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(to right, black 50%, transparent 100%);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  
 }
 
 .project__tittle {
@@ -637,7 +644,7 @@ ul {
   }
   header::before {
     background-position: center;
-    background-size: 37rem;
+    background-size: 47rem;
     top: -84px;
   }
   .project__list {
@@ -698,7 +705,7 @@ ul {
     height: 21rem;
   }
   .slideshow {
-    margin-top: 1rem;
+    margin-top: 3.5rem;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {

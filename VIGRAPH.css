@@ -115,6 +115,9 @@ header::before {
   transition: all 0.3s ease-in;
   -webkit-tap-highlight-color: transparent;
 }
+.project__list--contact:active {
+  color: white;
+}
 
 .project__list--contact:hover {
   color: grey;
@@ -135,9 +138,6 @@ header::before {
   -webkit-tap-highlight-color: transparent;
 }
 
-#dropdown-arrow:hover {
-  color: gray;
-}
 #option {
   color: white;
 }
@@ -529,7 +529,7 @@ ul {
 #messagebox {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 140%;
   left: 41%;
   right: 0%;
   background-color: rgba(61, 59, 59, 0.64);

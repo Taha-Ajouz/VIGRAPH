@@ -46,7 +46,6 @@ header::before {
   mask-image: linear-gradient(to right, black 50%, transparent 100%);
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
-  
 }
 
 .project__tittle {
@@ -353,9 +352,10 @@ img {
   text-align: center;
 }
 .myframe {
-  grid-column: 1 / -1; /* span across all columns */
-  height: 18.5rem; /* stretch vertically */
-  border: none; /* clean look */
+  grid-column: 1 / -1;
+  height: 18.5rem;
+  border: none;
+  width: 100%;
 }
 
 .main2__fields {
@@ -381,9 +381,7 @@ img {
   background-attachment: scroll;
   height: 27.5rem;
 }
-.myframe {
-  width: 100%;
-}
+
 .video__text1 {
   color: rgba(0, 0, 0, 0);
   text-align: center;
@@ -733,6 +731,9 @@ ul {
   #img4 {
     width: 15rem;
     height: 15rem;
+  }
+  .main2__cont {
+    margin-top: 1.5rem;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {

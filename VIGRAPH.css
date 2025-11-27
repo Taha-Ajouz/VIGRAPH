@@ -22,7 +22,7 @@ body {
   padding: 2rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/8;
   overflow: hidden;
 }
 .project::before {
@@ -38,6 +38,26 @@ body {
   width: 100%;
   opacity: 0.6;
   z-index: -1;
+    /* WebKit-specific mask for left/right transparency */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+
 }
 
 .project__tittle {
@@ -142,7 +162,7 @@ body {
   top: 4rem;
   font-weight: bold;
   padding: 1.1rem;
-  box-shadow: 2px 2px 5px rgba(0, 0, 255, 0.2);
+  box-shadow: 2px 2px 5px grey(0, 0, 255, 0.2);
   border: 1px solid;
   border-color: white;
   border-radius: 0.63rem;
@@ -812,7 +832,7 @@ ul {
   }
   .project__container {
     left: 39%;
-    top: 55%;
+    top: 58%;
   }
 }
 @media only screen and (min-width: 715px) and (max-width: 770px) {
@@ -927,9 +947,6 @@ ul {
   }
   .ending__container1 {
     margin-bottom: 0rem;
-  }
-  .project {
-    height: 25vh;
   }
   .video__text1 {
     font-size: 2.2rem;

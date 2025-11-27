@@ -619,7 +619,7 @@ ul {
 
 @media only screen and (min-width: 360px) and (max-width: 550px) {
   html {
-    font-size: 9px;
+    font-size: 10px;
   }
   .ending__container {
     gap: 2rem;
@@ -829,8 +829,32 @@ ul {
     margin-top: 13.5rem;
   }
 }
-
-@media only screen and (min-width: 635px) and (max-width: 770px) {
+@media only screen and (min-width: 549px) and (max-width: 714px) {
+  html {
+    font-size:7.8px;
+  }
+  .ending__container {
+    gap: 4.4rem;
+  }
+  .project__list {
+    gap: 2.5rem;
+  }
+  header::before {
+    background-position: center;
+    background-size: 70rem;
+  }
+  #img1,
+  #img2,
+  #img3,
+  #img4 {
+    width: 15rem;
+    height: 15rem;
+  }
+  .project__container {
+    margin-top: 13.5rem;
+  }
+}
+@media only screen and (min-width: 715px) and (max-width: 770px) {
   html {
     font-size:9px;
   }
@@ -942,5 +966,98 @@ ul {
   /* Styles for screens exactly 2560px wide */
   html {
     font-size: 27px;
+  }
+}
+@media only screen and (min-width: 410px) and (max-width: 430px){
+  html {
+    font-size: 9px;
+  }
+  .ending__container {
+    gap: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2rem;
+  }
+  .ending__container1 {
+    margin-bottom: 0rem;
+  }
+  .video__text1 {
+    font-size: 2.2rem;
+    -webkit-text-stroke: 0.6px white;
+  }
+  textarea::placeholder {
+    font-size: 1rem;
+  }
+  .main2__fields {
+    width: 26.7rem;
+  }
+  header::before {
+    background-position: center;
+    background-size: 47rem;
+    top: -84px;
+  }
+  .project__list {
+    gap: 1rem;
+    margin-right: 1rem;
+  }
+  .main__fields--contact {
+    -webkit-text-stroke: 0.4px white;
+  }
+  .main2__cont {
+    gap: 1.43rem;
+    margin-top: 0rem;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .video {
+    width: 100%;
+  }
+  #img1,
+  #img2,
+  #img3,
+  #img4 {
+    width: 9.5rem;
+    height: 9.5rem;
+  }
+  #drop__container {
+    margin-left: 4.1rem;
+  }
+  .project__tittle {
+    top: 17%;
+  }
+  #messagebox {
+    top: 53%;
+    left: 25%;
+  }
+  .project__list1,
+  .project__list2,
+  #project__list3,
+  #dropdown-arrow {
+    font-size: 1rem;
+  }
+  .project__text {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .project__header {
+    font-size: 4.36rem;
+  }
+  .project__list--contact {
+    font-size: 1.1rem;
+    padding: 0.1rem 2rem;
+  }
+  .project__container {
+    margin-top: 7rem;
+  }
+  img {
+    margin-bottom: 1rem;
+  }
+  .project {
+    height: 21rem;
+  }
+  .slideshow {
+    margin-top: 3.5rem;
   }
 }

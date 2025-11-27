@@ -36,7 +36,7 @@ header::before {
   height: 40rem;
   background-image: url(lapoot.jpeg);
   background-repeat: no-repeat;
-  background-size: 100rem auto;
+  background-size: 100rem 100%;
   background-position: center;
   opacity: 0.6;
   z-index: -1;
@@ -114,6 +114,7 @@ header::before {
   cursor: pointer;
   transition: all 0.3s ease-in;
   -webkit-tap-highlight-color: transparent;
+  display: block;
 }
 .project__list--contact:active {
   color: white;
@@ -616,7 +617,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 321px) and (max-width: 480px) {
+@media only screen and (min-width: 360px) and (max-width: 550px) {
   html {
     font-size: 9px;
   }
@@ -670,7 +671,7 @@ ul {
     height: 9.5rem;
   }
   #drop__container {
-    margin-left: 3.1rem;
+    margin-left: 4.1rem;
   }
   .project__tittle {
     top: 17%;
@@ -700,7 +701,7 @@ ul {
     margin-top: 7rem;
   }
   img {
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
   }
   .project {
     height: 21rem;
@@ -709,9 +710,98 @@ ul {
     margin-top: 3.5rem;
   }
 }
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  body {
-    font-size: 16px;
+@media only screen and (max-width: 390px) {
+  html {
+    font-size: 9px;
+  }
+  .ending__container {
+    gap: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2rem;
+  }
+  .ending__container1 {
+    margin-bottom: 1rem;
+  }
+  .video__text1 {
+    font-size: 2.2rem;
+    -webkit-text-stroke: 0.6px white;
+  }
+  textarea::placeholder {
+    font-size: 1rem;
+  }
+  .main2__fields {
+    width: 26.7rem;
+  }
+  header::before {
+    background-position: center;
+    background-size: 47rem;
+    top: -84px;
+  }
+  .project__list {
+    gap: 1rem;
+    margin-right: 1rem;
+  }
+  .main__fields--contact {
+    -webkit-text-stroke: 0.4px white;
+  }
+  .main2__cont {
+    gap: 1.43rem;
+    margin-top: 0rem;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .video {
+    width: 100%;
+  }
+  #img1,
+  #img2,
+  #img3,
+  #img4 {
+    width: 9.5rem;
+    height: 9.5rem;
+  }
+
+  .project__tittle {
+    top: 17%;
+  }
+  #messagebox {
+    top: 53%;
+    left: 25%;
+  }
+  .project__list1,
+  .project__list2,
+  #project__list3,
+  #dropdown-arrow {
+    font-size: 1rem;
+  }
+  .project__text {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .project__header {
+    font-size: 4.36rem;
+  }
+  .project__list--contact {
+    font-size: 1.1rem;
+    padding: 0.1rem 2rem;
+  }
+  .project__container {
+    margin-top: 14.5rem;
+  }
+  #drop__container {
+    margin-left: 4.5rem;
+  }
+  img {
+    margin-bottom: 1rem;
+  }
+  .project {
+    height: 21rem;
+  }
+  .slideshow {
+    margin-top: 3.5rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -735,16 +825,40 @@ ul {
     width: 15rem;
     height: 15rem;
   }
-  .main2__cont {
-    margin-top: 1.5rem;
+  .project__container {
+    margin-top: 13.5rem;
+  }
+}
+
+@media only screen and (min-width: 635px) and (max-width: 770px) {
+  html {
+    font-size: 9px;
+  }
+  .ending__container {
+    gap: 4.4rem;
+  }
+  .project__list {
+    gap: 2.5rem;
+  }
+  header::before {
+    background-position: center;
+    background-size: 70rem;
+  }
+  #img1,
+  #img2,
+  #img3,
+  #img4 {
+    width: 15rem;
+    height: 15rem;
   }
   .project__container {
     margin-top: 13.5rem;
   }
 }
-@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+
+@media only screen and (min-width: 1024px) and (max-width: 1628px) {
   html {
-    font-size: 13px;
+    font-size: 12px;
   }
   #img1,
   #img2,
@@ -776,6 +890,9 @@ ul {
   }
   .main2__fields {
     width: 26.7rem;
+  }
+  #drop__container {
+    margin-left: 4rem;
   }
   .video__text2 {
     font-size: 2.6rem;

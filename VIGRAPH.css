@@ -756,6 +756,16 @@ ul {
   .video__text2 {
     font-size: 2.6rem;
   }
+  .ending__container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-right: 0rem;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -768,6 +778,16 @@ ul {
   #img4 {
     width: 12rem;
     height: 12rem;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .ending__container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-right: 0rem;
   }
 }
 
@@ -847,7 +867,7 @@ ul {
     font-size: 3rem;
   }
 }
-@media screen and (min-width: 440px) and (max-width: 420px) {
+@media screen and (min-width: 420px) and (max-width: 440px) {
   html {
     font-size: 9px;
   }
@@ -856,7 +876,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 400px) and (max-width:470px) {
+@media screen and (min-width: 400px) and (max-width: 470px) {
   html {
     font-size: 9px;
   }

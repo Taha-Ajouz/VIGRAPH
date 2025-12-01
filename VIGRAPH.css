@@ -684,8 +684,8 @@ ul {
   html {
     font-size: 9.6px;
   }
-    .main__fields--contact{
-    -webkit-text-stroke:0.4px white;
+  .main__fields--contact {
+    -webkit-text-stroke: 0.4px white;
   }
 }
 
@@ -714,22 +714,10 @@ ul {
 }
 @media screen and (max-width: 571px) {
   html {
-    font-size: 6.3px;
+    font-size: 9px;
   }
-    .main__fields--contact{
-    -webkit-text-stroke:0.4px white;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  html {
-    font-size: 6.2px;
-  }
-}
-
-@media screen and (max-width: 499px) {
-  html {
-    font-size: 7.6px;
+  .main__fields--contact {
+    -webkit-text-stroke: 0.4px white;
   }
   .ending__container {
     flex-direction: column;
@@ -737,6 +725,66 @@ ul {
     gap: 3rem;
     margin-right: 0rem;
   }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .video {
+    width: 100%;
+  }
+  #img1,
+  #img2,
+  #img3,
+  #img4 {
+    width: 14rem;
+    height: 14rem;
+  }
+  .project__tittle {
+    top: 32%;
+  }
+  .ending__container1 {
+    margin-bottom: 0rem;
+  }
+  .project__container {
+    top: 80%;
+  }
+  .project__list {
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 509px) {
+  .video__text2 {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 8.7px;
+  }
+  #img1,
+  #img2,
+  #img3,
+  #img4 {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+  .ending__container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-right: 0rem;
+  }
+  .project__list {
+    gap: 2rem;
+  }
+
   .ending__container1 {
     margin-bottom: 0rem;
   }
@@ -752,11 +800,10 @@ ul {
     height: 11rem;
   }
 
-  .main__fields--contact{
-    -webkit-text-stroke:0.4px white;
+  .main__fields--contact {
+    -webkit-text-stroke: 0.4px white;
   }
-  .main
-  .project__header {
+  .main .project__header {
     font-size: 4.5rem;
   }
   img {
@@ -768,12 +815,16 @@ ul {
   .video__text1 {
     -webkit-text-stroke: 0.5px rgb(255, 255, 255);
   }
-  .video__text2{
+  .video__text2 {
     font-size: 2.2rem;
-    top:13rem ;
+    top: 13rem;
   }
   .project__text {
     margin-top: 0rem;
+    font-size: 1rem;
+  }
+  .project__header {
+    font-size: 2.8rem;
   }
   .project__container {
     top: 80%;
@@ -782,35 +833,60 @@ ul {
     gap: 1.5rem;
     margin-top: 0rem;
   }
-  .project__list{
-    gap: 3rem;
+  .project__tittle {
+    top: 20%;
   }
-  .project__tittle{
-    top:20%;
+  #drop__container {
+    padding: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-  #drop__container{
-  padding:0rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+}
+@media screen and (max-width: 460px) {
+  .video__text2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 440px) and (max-width: 420px) {
+  html {
+    font-size: 9px;
+  }
+  .video__text2 {
+    font-size: 2.2rem;
   }
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (min-width: 400px) and (max-width:470px) {
+  html {
+    font-size: 9px;
+  }
+
+  .main__fields--contact {
+    -webkit-text-stroke: 0.4px white;
+  }
+  .video__text2 {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (max-width: 399px) {
   html {
     font-size: 7px;
   }
-    .main__fields--contact{
-    -webkit-text-stroke:0.4px white;
+  .main__fields--contact {
+    -webkit-text-stroke: 0.4px white;
+  }
+  .video__text2 {
+    font-size: 2.6rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 360px) {
   html {
-    font-size: 6px;
+    font-size: 6.7px;
   }
-    .main__fields--contact{
-    -webkit-text-stroke:0.4px white;
+  .main__fields--contact {
+    -webkit-text-stroke: 0.4px white;
   }
-  .video__text2{
-    font-size: 2.9rem;
+  .video__text2 {
+    font-size: 2.4rem;
   }
 }

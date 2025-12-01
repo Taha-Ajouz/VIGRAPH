@@ -810,4 +810,7 @@ ul {
     .main__fields--contact{
     -webkit-text-stroke:0.4px white;
   }
+  .video__text2{
+    font-size: 2.9rem;
+  }
 }
